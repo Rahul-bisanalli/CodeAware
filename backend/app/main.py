@@ -19,6 +19,7 @@ class AnalysisRequest(BaseModel):
     code: str
     error: Optional[str] = ""
     model: Optional[str] = "gemini-flash-latest"
+    instruction: Optional[str] = ""
 
 class Issue(BaseModel):
     title: str
@@ -42,7 +43,12 @@ async def get_models():
 @app.post("/analyze")
 async def analyze_code(request: AnalysisRequest):
     try:
-        suggestion = await gemini_service.get_debugging_suggestion(request.code, request.error, request.model)
+        suggestion = await gemini_service.get_debugging_suggestion(
+            request.code,
+            request.error,
+            request.model,
+            request.instruction,
+        )
         return {"suggestion": suggestion}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

@@ -1,27 +1,25 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",
-    "@vitejs/plugin-react": "^5.1.4",
     "framer-motion": "^12.35.2",
     "lucide-react": "^0.577.0",
-    "prismjs": "^1.30.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "react-markdown": "^10.1.0",
-    "react-simple-code-editor": "^0.14.1",
+    "react-markdown": "^10.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "@vitejs/plugin-react": "^5.1.4",
+    "tailwindcss": "^4.2.2",
     "vite": "^7.3.1"
   }
 }
