@@ -22,8 +22,6 @@
 
 ---
 
----
-
 ## ✨ Features
 
 - 🖥️ **Monaco Editor** — The same editor that powers VS Code, with syntax highlighting, bracket colorization, and smooth scrolling
