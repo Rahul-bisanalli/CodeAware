@@ -1,9 +1,6 @@
 
 # 🧠 CodeAware — AI-Powered Code Learning Assistant
 
-
-![CodeAware Screenshot](screenshot.png)
-
 <p align="center">
   <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/FastAPI-0.100+-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
